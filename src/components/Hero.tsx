@@ -86,7 +86,7 @@ const Hero = () => {
 
             </motion.div>
 
-            <motion.div className='my-4' >
+            <motion.div variants={itemVariants} className="my-4">
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -98,6 +98,7 @@ const Hero = () => {
                 View Resume
               </motion.a>
             </motion.div>
+
           </div>
 
           <motion.div
