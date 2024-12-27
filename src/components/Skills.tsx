@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Code, Globe, Server, Database, Wrench, Palette } from 'lucide-react';
 
@@ -6,7 +6,7 @@ const Skills = () => {
   const skills = [
     {
       category: 'Frontend Development',
-      icon: <Globe className="w-6 h-6" />,
+      icon: <Globe className="w-6 h-6" />, 
       items: [
         'React',
         'Next.js',
@@ -16,8 +16,8 @@ const Skills = () => {
         'TailwindCSS',
         'Redux',
         'React Hook Form',
-        'React Router'
-      ]
+        'React Router',
+      ],
     },
     {
       category: 'Data Structures & Algorithms',
@@ -26,60 +26,39 @@ const Skills = () => {
         'Problem Solving',
         'Algorithm Optimization',
         'Time Complexity Analysis',
-        'Space Complexity Optimization'
-      ]
+        'Space Complexity Optimization',
+      ],
     },
     {
       category: 'Backend Development',
-      icon: <Server className="w-6 h-6" />,
-      items: [
-        'Node.js',
-        'Express.js',
-        'Socket.io',
-        'MongoDB',
-        'Nodemon'
-      ]
+      icon: <Server className="w-6 h-6" />, 
+      items: ['Node.js', 'Express.js', 'Socket.io', 'MongoDB', 'Nodemon'],
     },
     {
       category: 'DevOps & Tools',
-      icon: <Wrench className="w-6 h-6" />,
-      items: [
-        'Git',
-        'GitHub',
-        'Docker',
-        'Jenkins',
-        'Postman',
-        'Vite'
-      ]
+      icon: <Wrench className="w-6 h-6" />, 
+      items: ['Git', 'GitHub', 'Docker', 'Jenkins', 'Postman', 'Vite'],
     },
     {
       category: 'Deployment Platforms',
-      icon: <Code className="w-6 h-6" />,
-      items: [
-        'Netlify',
-        'Vercel',
-        'Render'
-      ]
+      icon: <Code className="w-6 h-6" />, 
+      items: ['Netlify', 'Vercel', 'Render'],
     },
     {
       category: 'Database & APIs',
-      icon: <Database className="w-6 h-6" />,
-      items: [
-        'MongoDB',
-        'RESTful APIs',
-        'Socket.io'
-      ]
+      icon: <Database className="w-6 h-6" />, 
+      items: ['MongoDB', 'RESTful APIs', 'Socket.io'],
     },
     {
       category: 'Design Tools',
-      icon: <Palette className="w-6 h-6" />,
-      items: [
-        'Figma',
-        'Responsive Design',
-        'UI/UX Principles'
-      ]
-    }
+      icon: <Palette className="w-6 h-6" />, 
+      items: ['Figma', 'Responsive Design', 'UI/UX Principles'],
+    },
   ];
+
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleSkills = showAll ? skills : skills.slice(0, 3);
 
   return (
     <section id="skills" className="py-20 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
@@ -97,7 +76,7 @@ const Skills = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skills.map((skillGroup, groupIndex) => (
+          {visibleSkills.map((skillGroup, groupIndex) => (
             <motion.div
               key={skillGroup.category}
               initial={{ opacity: 0, y: 20 }}
@@ -110,9 +89,7 @@ const Skills = () => {
                 <div className="p-2 bg-purple-500/10 rounded-lg text-purple-400 group-hover:bg-purple-500/20 transition-colors">
                   {skillGroup.icon}
                 </div>
-                <h3 className="text-xl font-semibold text-white">
-                  {skillGroup.category}
-                </h3>
+                <h3 className="text-xl font-semibold text-white">{skillGroup.category}</h3>
               </div>
 
               <div className="flex flex-wrap gap-2">
@@ -131,6 +108,15 @@ const Skills = () => {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="text-center mt-8">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="px-6 py-2 text-white bg-purple-500 rounded-lg hover:bg-purple-600 transition-all duration-300"
+          >
+            {showAll ? 'Show Less' : 'Show More'}
+          </button>
         </div>
       </div>
     </section>

@@ -30,7 +30,7 @@ const Hero = () => {
       <div className="absolute inset-0 w-full h-full">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-purple-900/20 via-transparent to-transparent"></div>
       </div>
-      
+
       <div className="container mx-auto px-6 py-20 z-10">
         <motion.div
           variants={containerVariants}
@@ -42,8 +42,8 @@ const Hero = () => {
             <motion.div variants={itemVariants}>
               <span className="inline-block text-purple-400 text-lg mb-4">Welcome to my portfolio</span>
             </motion.div>
-            
-            <motion.h1 
+
+            <motion.h1
               variants={itemVariants}
               className="text-5xl md:text-7xl font-bold text-white mb-6"
             >
@@ -52,16 +52,16 @@ const Hero = () => {
                 Suraj Singh
               </span>
             </motion.h1>
-            
-            <motion.p 
+
+            <motion.p
               variants={itemVariants}
               className="text-xl text-gray-300 mb-8 leading-relaxed"
             >
-              A passionate full-stack developer crafting beautiful and functional web experiences. 
+              A passionate full-stack developer crafting beautiful and functional web experiences.
               Turning ideas into reality through elegant code.
             </motion.p>
-            
-            <motion.div 
+
+            <motion.div
               variants={itemVariants}
               className="flex space-x-4 justify-center md:justify-start"
             >
@@ -82,6 +82,21 @@ const Hero = () => {
                   {social.icon}
                 </motion.a>
               ))}
+
+
+            </motion.div>
+
+            <motion.div className='my-4' >
+              <motion.a
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href="https://drive.google.com/file/d/1kRiiqhC-qNG7VeU-RgXLYNF2GWdvmEGo/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 text-lg font-semibold text-white rounded-lg bg-gradient-to-r from-purple-400 to-pink-500 hover:shadow-lg transition-all duration-300"
+              >
+                View Resume
+              </motion.a>
             </motion.div>
           </div>
 
@@ -90,7 +105,7 @@ const Hero = () => {
             className="md:w-1/2 mt-12 md:mt-0 relative"
           >
             <motion.div
-              animate={{ 
+              animate={{
                 boxShadow: [
                   "0 0 0 0 rgba(168, 85, 247, 0.4)",
                   "0 0 0 20px rgba(168, 85, 247, 0)",

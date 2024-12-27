@@ -6,7 +6,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   const [activeSection, setActiveSection] = React.useState('home');
 
-  const menuItems = ['Home', 'Projects', 'Skills', 'Achievements', 'Contact'];
+  const menuItems = ['Home', 'Projects', 'Experience', 'Skills', 'Achievements', 'Contact'];
 
   React.useEffect(() => {
     const handleScroll = () => {
