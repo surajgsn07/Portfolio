@@ -25,6 +25,24 @@ const Projects = () => {
       live: 'https://letsconnect-ui.netlify.app/',
     },
     {
+      title: 'PCTE-Library',
+      description:
+        'PCTE-Library is a library management system that allows users to manage books, authors, and categories. It also includes features like user authentication, book search, and reminder notifications for overdue books.',
+      image: 'pcte-library.png',
+      technologies: ['Node.js', 'Express', 'MongoDB' , 'ReactJs', 'TailwindCSS' ,'Cloudinary' ,'nodemailer' , 'node-cron'],
+      github: 'https://github.com/surajgsn07/library-management',
+      live: 'https://pcte-library.netlify.app/',
+    },
+    {
+      title: 'Hack-Meets',
+      description:
+        'Hack-meets is a platform for techies to find their partners for hacakthons and their group projects and also to get involved in hackathons. It does have features like group projects and hackathons management and Chats.',
+      image: 'hack-meets.png',
+      technologies: ['Node.js', 'Express', 'MongoDB' , 'ReactJs', 'TailwindCSS' ,'Cloudinary' ,'Socket.io','Google OAuth' ],
+      github: 'https://github.com/surajgsn07/hack-meets.git',
+      live: 'https://hack-meets.vercel.app/',
+    },
+    {
       title: 'Watch-it',
       description: 'A video-streaming platform that allows users to watch videos , upload their own and add comments and like and many more.',
       image: 'watchit.png',
@@ -32,6 +50,15 @@ const Projects = () => {
       github: 'https://github.com/surajgsn07/My-tube-Frontend',
       live: 'https://watch-it-surajgsn.netlify.app/',
     },
+    {
+      title: 'Pcte-PPT Maker',
+      description: 'A platform to help Pcte students to create their  PPTs and helpt them to reduce their workload.',
+      image: 'ppt-maker.png',
+      technologies: ['React', 'TailwindCSS' , 'Groq Api','Unsplash API' , 'Pexel Api'],
+      github: 'https://github.com/surajgsn07/PCTE-PPT-Maker',
+      live: 'https://pcte-ppt-maker.netlify.app/',
+    }
+    ,
     {
       title: 'Pcte-Synopsis Maker',
       description: 'A platform to help Pcte students to create their  synopsis.',

@@ -32,7 +32,7 @@ const Skills = () => {
     {
       category: 'Backend Development',
       icon: <Server className="w-6 h-6" />, 
-      items: ['Node.js', 'Express.js', 'Socket.io', 'MongoDB', 'Nodemon'],
+      items: ['Node.js', 'Express.js', 'Socket.io', 'MongoDB', 'Nodemon' ,'Redis'],
     },
     {
       category: 'DevOps & Tools',
