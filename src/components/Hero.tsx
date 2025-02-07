@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, ChevronDown } from 'lucide-react';
-
+import { SiLeetcode } from "react-icons/si";
 const Hero = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -68,7 +68,8 @@ const Hero = () => {
               {[
                 { icon: <Github size={24} />, href: "https://github.com/surajgsn07" },
                 { icon: <Linkedin size={24} />, href: "https://www.linkedin.com/in/suraj-singh-431010248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-                { icon: <Mail size={24} />, href: "mailto:surajgsn07@gmail.com" }
+                { icon: <Mail size={24} />, href: "mailto:surajgsn07@gmail.com" },
+                { icon: <SiLeetcode size={24} />, href: "https://leetcode.com/u/suraj_gsn/" }
               ].map((social, index) => (
                 <motion.a
                   key={index}
@@ -90,7 +91,7 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://drive.google.com/file/d/1kRiiqhC-qNG7VeU-RgXLYNF2GWdvmEGo/view?usp=sharing"
+                href="https://drive.google.com/file/d/1rNZCbvNnJ-GEHgzTNZym_uXcpAblw0NA/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-3 text-lg font-semibold text-white rounded-lg bg-gradient-to-r from-purple-400 to-pink-500 hover:shadow-lg transition-all duration-300"

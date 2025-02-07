@@ -6,6 +6,14 @@ const Achievements = () => {
   const [showAll, setShowAll] = useState(false);
 
   const achievements = [
+    
+    {
+      icon: <Award className="w-8 h-8 text-blue-500" />,
+      title: 'Hackathon winner 2025',
+      description: 'Won a virtual hacakthon orahnized by UpSkillMafia',  
+      year: '2025',
+      image: 'code-looser.jpg'
+    },
     {
       icon: <Trophy className="w-8 h-8 text-yellow-500" />,
       title: 'First Runner Up',
