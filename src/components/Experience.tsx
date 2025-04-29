@@ -1,9 +1,15 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
 
 const MyExperience = () => {
   const experiences = [
+    {
+      title:'Full Stack Developer Intern',
+      company:'Smart Stream Technologies',
+      duration:'March 2025 - Present',
+      location :'Remote',
+      description : 'Built the frontend for the client product using react and developed backend apis using the NEST.js framework'
+    },
     {
       title: 'Full Stack Developer Intern',
       company: 'Seequenze Technologies',
@@ -20,7 +26,8 @@ const MyExperience = () => {
     }
   ];
 
-  return (<section id="experience" className="py-20 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
+  return (
+  <section id="experience" className="py-20 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
     <div className="container mx-auto px-6">
       <motion.div
         initial={{ opacity: 0, y: 20 }}

@@ -7,6 +7,14 @@ const Projects = () => {
 
   const projects = [
     {
+      title:'Mind-Mate',
+      description:'It is study companion for students to boost their concentration and confidence as well with features like quizes , human consultancy , 24/7 chat bots , AI Interviews with confidence and accuracy analysis and many more .',
+      image: 'mind-mate.png',
+      technologies: ['React', 'Javascript', 'TailwindCSS' , 'Node.js', 'Express', 'MongoDB' , 'Cloudinary'  , 'Web-RTC'],
+      github: 'https://github.com/tirtheshjaintj/MindMate-FrontEnd',
+      live: 'https://tjmindmate.netlify.app/',
+    },
+    {
       title: 'React Video Annotation Tool',
       description:
         'It is a flexible and intuitive library to add annotations on videos in real-time. It supports a wide range of features including shape tools, annotation lists, undo/redo functionality, and more.',
