@@ -10,7 +10,7 @@ const Achievements = () => {
     {
       icon: <Award className="w-8 h-8 text-blue-500" />,
       title: 'Hackathon winner 2025',
-      description: 'Won a virtual hacakthon orahnized by UpSkillMafia',  
+      description: 'Won a virtual hacakthon organized by UpSkillMafia',  
       year: '2025',
       image: 'code-looser.jpg'
     },
